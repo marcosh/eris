@@ -2,6 +2,7 @@
 namespace Eris\Quantifier;
 
 use Eris\Generator\GeneratedValue;
+use PHPUnit\Framework\AssertionFailedError;
 
 /**
  * TODO: change namespace. To what?
@@ -52,7 +53,7 @@ final class Evaluation
                 $this->assertion,
                 $this->values->unbox()
             );
-        } catch (\PHPUnit_Framework_AssertionFailedError $e) {
+        } catch (AssertionFailedError $e) {
             call_user_func($this->onFailure, $this->values, $e);
             return;
         }

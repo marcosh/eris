@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Shrinker;
 
-class FixedTimeLimitTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class FixedTimeLimitTest extends TestCase
 {
     public function testDetectsAMaximumTimeHasElapsed()
     {

@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class IntegerGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class IntegerGeneratorTest extends TestCase
 {
     protected function setUp()
     {

@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class BindGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class BindGeneratorTest extends TestCase
 {
     protected function setUp()
     {

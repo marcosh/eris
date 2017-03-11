@@ -2,8 +2,10 @@
 namespace Eris\Listener;
 
 use Eris\Generator\GeneratedValue;
+use PHPUnit\Framework\AssertionFailedError;
+use PHPUnit\Framework\TestCase;
 
-class LogTest extends \PHPUnit_Framework_TestCase
+class LogTest extends TestCase
 {
     protected function setUp()
     {
@@ -30,7 +32,7 @@ class LogTest extends \PHPUnit_Framework_TestCase
 
     public function testWritesALineForTheFirstFailureOfATest()
     {
-        $this->log->failure([23], new \PHPUnit_Framework_AssertionFailedError("Failed asserting that..."));
+        $this->log->failure([23], new AssertionFailedError("Failed asserting that..."));
         $this->assertEquals(
             "[2011-03-13T07:06:40+00:00][1234] failure: [23]. Failed asserting that..." . PHP_EOL,
             file_get_contents($this->file)
@@ -39,7 +41,7 @@ class LogTest extends \PHPUnit_Framework_TestCase
 
     public function testWritesALineForEachShrinkingAttempt()
     {
-        $this->log->shrinking([22], new \PHPUnit_Framework_AssertionFailedError("Failed asserting that..."));
+        $this->log->shrinking([22], new AssertionFailedError("Failed asserting that..."));
         $this->assertEquals(
             "[2011-03-13T07:06:40+00:00][1234] shrinking: [22]" . PHP_EOL,
             file_get_contents($this->file)

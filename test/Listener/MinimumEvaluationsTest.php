@@ -3,8 +3,9 @@ namespace Eris\Listener;
 
 use Eris\Generator\GeneratedValue;
 use LogicException;
+use PHPUnit\Framework\TestCase;
 
-class MinimumEvaluationsTest extends \PHPUnit_Framework_TestCase
+class MinimumEvaluationsTest extends TestCase
 {
     protected function setUp()
     {

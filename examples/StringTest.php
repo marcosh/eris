@@ -9,7 +9,7 @@ function string_concatenation($first, $second)
     return $first . $second;
 }
 
-class StringTest extends PHPUnit_Framework_TestCase
+class StringTest extends \PHPUnit\Framework\TestCase
 {
     use Eris\TestTrait;
 

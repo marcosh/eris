@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class FloatGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class FloatGeneratorTest extends TestCase
 {
     protected function setUp()
     {

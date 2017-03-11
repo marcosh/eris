@@ -1,9 +1,10 @@
 <?php
 namespace Eris;
 
+use PHPUnit\Framework\TestCase;
 use SimpleXMLElement;
 
-class ExampleEnd2EndTest extends \PHPUnit_Framework_TestCase
+class ExampleEnd2EndTest extends TestCase
 {
     private $testFile;
     private $testsByName;
@@ -270,7 +271,7 @@ class ExampleEnd2EndTest extends \PHPUnit_Framework_TestCase
         foreach ($this->environment as $name => $value) {
             $environmentVariables[] .= "$name=$value";
         }
-        $phpunitCommand = implode(" ", $environmentVariables) . " vendor/bin/phpunit --log-junit $logFile $samplesTestCase";
+        $phpunitCommand = implode(" ", $environmentVariables) . " vendor/bin/phpunit --log-junit $logFile $samplesTestCase --dont-report-useless-tests";
         exec($phpunitCommand, $output);
         $contentsOfXmlLog = file_get_contents($logFile);
         if (!$contentsOfXmlLog) {

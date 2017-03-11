@@ -2,8 +2,9 @@
 namespace Eris\Generator;
 
 use DateTime;
+use PHPUnit\Framework\TestCase;
 
-class DateGeneratorTest extends \PHPUnit_Framework_TestCase
+class DateGeneratorTest extends TestCase
 {
     protected function setUp()
     {

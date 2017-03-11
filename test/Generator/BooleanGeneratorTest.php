@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class BooleanGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class BooleanGeneratorTest extends TestCase
 {
     public function setUp()
     {

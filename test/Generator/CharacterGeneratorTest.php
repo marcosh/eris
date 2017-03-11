@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class CharacterGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class CharacterGeneratorTest extends TestCase
 {
     protected function setUp()
     {

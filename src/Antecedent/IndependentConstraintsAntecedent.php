@@ -1,8 +1,8 @@
 <?php
 namespace Eris\Antecedent;
 
-use PHPUnit_Framework_ExpectationFailedException;
 use Eris\Antecedent;
+use PHPUnit\Framework\ExpectationFailedException;
 
 class IndependentConstraintsAntecedent implements Antecedent
 {
@@ -24,7 +24,7 @@ class IndependentConstraintsAntecedent implements Antecedent
             // TODO: use Evaluation object?
             try {
                 $this->constraints[$i]->evaluate($values[$i]);
-            } catch (PHPUnit_Framework_ExpectationFailedException $e) {
+            } catch (ExpectationFailedException $e) {
                 return false;
             }
         }

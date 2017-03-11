@@ -1,7 +1,7 @@
 <?php
 use Eris\Generator;
 
-class AssociativeArrayTest extends PHPUnit_Framework_TestCase
+class AssociativeArrayTest extends \PHPUnit\Framework\TestCase
 {
     use Eris\TestTrait;
 

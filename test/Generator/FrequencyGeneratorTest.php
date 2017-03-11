@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class FrequencyGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class FrequencyGeneratorTest extends TestCase
 {
     protected function setUp()
     {

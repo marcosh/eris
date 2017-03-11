@@ -4,7 +4,7 @@ namespace Eris\Shrinker;
 use Eris\Generator\GeneratedValue;
 use Eris\Generator\TupleGenerator;
 use Eris\Quantifier\Evaluation;
-use PHPUnit_Framework_AssertionFailedError as AssertionFailed;
+use PHPUnit\Framework\AssertionFailedError as AssertionFailed;
 
 class Random // implements Shrinker
 {

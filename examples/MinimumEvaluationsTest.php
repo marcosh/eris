@@ -1,7 +1,7 @@
 <?php
 use Eris\Generator;
 
-class MinimumEvaluationsTest extends PHPUnit_Framework_TestCase
+class MinimumEvaluationsTest extends \PHPUnit\Framework\TestCase
 {
     use Eris\TestTrait;
 

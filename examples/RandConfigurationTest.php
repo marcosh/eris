@@ -3,7 +3,7 @@ use Eris\Generator;
 use Eris\Random;
 use Eris\TestTrait;
 
-class RandConfigurationTest extends PHPUnit_Framework_TestCase
+class RandConfigurationTest extends \PHPUnit\Framework\TestCase
 {
     use TestTrait;
 

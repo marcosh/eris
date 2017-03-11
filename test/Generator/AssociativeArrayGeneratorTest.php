@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class AssociativeArrayGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class AssociativeArrayGeneratorTest extends TestCase
 {
     protected function setUp()
     {

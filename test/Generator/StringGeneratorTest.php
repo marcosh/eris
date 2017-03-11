@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class StringGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class StringGeneratorTest extends TestCase
 {
     public function setUp()
     {

@@ -2,7 +2,7 @@
 use Eris\Generator;
 use Eris\TestTrait;
 
-class ChooseTest extends PHPUnit_Framework_TestCase
+class ChooseTest extends \PHPUnit\Framework\TestCase
 {
     use TestTrait;
 

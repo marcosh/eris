@@ -116,7 +116,7 @@ The shrinking for this test will not run for more than 2 seconds (although the t
     /home/giorgio/code/eris/examples/ShrinkingTimeLimitTest.php:32
 
     Caused by
-    PHPUnit_Framework_ExpectationFailedException: Concatenating 'hW4N*:fD0&%+D_' to 'p:\(,N\7A6' gives 'hW4N*:fD0&%+D_p:\(,N\7A6ERROR'
+    \PHPUnit\Framework\ExpectationFailedException: Concatenating 'hW4N*:fD0&%+D_' to 'p:\(,N\7A6' gives 'hW4N*:fD0&%+D_p:\(,N\7A6ERROR'
 
     Failed asserting that 29 matches expected 24.
 

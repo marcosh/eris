@@ -1,7 +1,7 @@
 <?php
 use Eris\Generator;
 
-class SuchThatTest extends \PHPUnit_Framework_TestCase
+class SuchThatTest extends \PHPUnit\Framework\TestCase
 {
     use Eris\TestTrait;
 

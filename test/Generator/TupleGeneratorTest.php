@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class TupleGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class TupleGeneratorTest extends TestCase
 {
     protected function setUp()
     {

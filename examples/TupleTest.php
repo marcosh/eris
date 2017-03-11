@@ -1,7 +1,7 @@
 <?php
 use Eris\Generator;
 
-class TupleTest extends PHPUnit_Framework_TestCase
+class TupleTest extends \PHPUnit\Framework\TestCase
 {
     use Eris\TestTrait;
 

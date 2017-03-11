@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class NamesGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class NamesGeneratorTest extends TestCase
 {
     public function setUp()
     {

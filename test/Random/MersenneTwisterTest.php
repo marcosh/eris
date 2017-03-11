@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Random;
 
-class MersenneTwisterTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class MersenneTwisterTest extends TestCase
 {
     public function setUp()
     {

@@ -2,8 +2,9 @@
 namespace Eris\Generator;
 
 use Eris\Quantifier\ForAll;
+use PHPUnit\Framework\TestCase;
 
-class SubsetGeneratorTest extends \PHPUnit_Framework_TestCase
+class SubsetGeneratorTest extends TestCase
 {
     protected function setUp()
     {

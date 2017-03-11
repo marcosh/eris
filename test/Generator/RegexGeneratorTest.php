@@ -1,7 +1,9 @@
 <?php
 namespace Eris\Generator;
 
-class RegexGeneratorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class RegexGeneratorTest extends TestCase
 {
     public static function supportedRegexes()
     {

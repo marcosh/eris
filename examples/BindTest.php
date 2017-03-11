@@ -1,7 +1,7 @@
 <?php
 use Eris\Generator;
 
-class BindTest extends PHPUnit_Framework_TestCase
+class BindTest extends \PHPUnit\Framework\TestCase
 {
     use Eris\TestTrait;
 

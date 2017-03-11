@@ -3,7 +3,7 @@ use Eris\Generator;
 use Eris\TestTrait;
 use Eris\Listener;
 
-class LogFileTest extends PHPUnit_Framework_TestCase
+class LogFileTest extends \PHPUnit\Framework\TestCase
 {
     use TestTrait;
 

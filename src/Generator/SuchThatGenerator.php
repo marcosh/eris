@@ -3,11 +3,11 @@ namespace Eris\Generator;
 
 use Eris\Generator;
 use LogicException;
-use PHPUnit_Framework_Constraint;
-use PHPUnit_Framework_ExpectationFailedException;
+use PHPUnit\Framework\Constraint\Constraint;
+use PHPUnit\Framework\ExpectationFailedException;
 
 /**
- * @param callable|PHPUnit_Framework_Constraint $filter
+ * @param callable|Constraint $filter
  * @return SuchThatGenerator
  */
 function filter($filter, Generator $generator, $maximumAttempts = 100)
@@ -16,7 +16,7 @@ function filter($filter, Generator $generator, $maximumAttempts = 100)
 }
 
 /**
- * @param callable|PHPUnit_Framework_Constraint $filter
+ * @param callable|Constraint $filter
  * @return SuchThatGenerator
  */
 function suchThat($filter, Generator $generator, $maximumAttempts = 100)
@@ -31,7 +31,7 @@ class SuchThatGenerator implements Generator
     private $maximumAttempts;
     
     /**
-     * @param callable|PHPUnit_Framework_Constraint
+     * @param callable|Constraint
      */
     public function __construct($filter, $generator, $maximumAttempts = 100)
     {
@@ -76,11 +76,11 @@ class SuchThatGenerator implements Generator
 
     private function predicate(GeneratedValue $value)
     {
-        if ($this->filter instanceof PHPUnit_Framework_Constraint) {
+        if ($this->filter instanceof Constraint) {
             try {
                 $this->filter->evaluate($value->unbox());
                 return true;
-            } catch (PHPUnit_Framework_ExpectationFailedException $e) {
+            } catch (ExpectationFailedException $e) {
                 return false;
             }
         }
@@ -89,6 +89,6 @@ class SuchThatGenerator implements Generator
             return call_user_func($this->filter, $value->unbox());
         }
 
-        throw new LogicException("Specified filter does not seem to be of the correct type. Please pass a callable or a PHPUnit_Framework_Constraint instead of " . var_export($this->filter, true));
+        throw new LogicException("Specified filter does not seem to be of the correct type. Please pass a callable or a \\PHPUnit\\Framework\\Constraint instead of " . var_export($this->filter, true));
     }
 }

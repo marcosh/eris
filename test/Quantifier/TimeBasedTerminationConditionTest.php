@@ -2,8 +2,9 @@
 namespace Eris\Quantifier;
 
 use DateInterval;
+use PHPUnit\Framework\TestCase;
 
-class TimeBasedTerminationConditionTest extends \PHPUnit_Framework_TestCase
+class TimeBasedTerminationConditionTest extends TestCase
 {
     protected function setUp()
     {
